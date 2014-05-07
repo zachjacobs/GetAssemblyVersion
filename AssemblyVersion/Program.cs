@@ -17,7 +17,7 @@ namespace AssemblyVersion
         static void Main(string[] args)
         {
             Assembly asm = Assembly.LoadFrom(args[0]);
-            Console.WriteLine(asm.GetName().Version);
+            Console.WriteLine(asm.GetName().Version.Major + "." + asm.GetName().Version.Minor + "." + asm.GetName().Version.Build);
         }
     }
 }
